@@ -7,7 +7,7 @@ if os.name == "posix":
     os.system('clear')
 if os.name == "nt":
     os.system('cls')
-print("TEAM : EIHT")
+print("TEAM : JogjaXploit")
 print("ARMY OF MAHDI DDOS")
 print("Made By MrSanZz")
 ip = raw_input("IP : ")
